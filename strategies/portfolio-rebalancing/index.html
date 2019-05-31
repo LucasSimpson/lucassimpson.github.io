@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Anthony Xie">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Portfolio Rebalancing - HodlBot Wiki</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../css/extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Portfolio Rebalancing";
+    var mkdocs_page_input_path = "strategies/portfolio-rebalancing.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/django.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-10006093-5', 'readthedocs.sheets.ch');
+      ga('send', 'pageview');
+  </script>
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> HodlBot Wiki</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="tocbase current">
+    
+    
+      
+
+
+  <li class="navtree toctree-l1 inactive">
+    <a class="" href="../..">Important Links</a>
+  </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">Getting Started</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../getting-started/pre-reqs/">HodlBot Pre-requisites</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../getting-started/set-up/">HodlBot Set-up</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../getting-started/account-size/">Account Size</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">Strategies</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../passive-investing/">Passive Investing</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../active-trading/">Active Trading</a>
+  </li>
+        
+          
+
+
+  
+    
+    <li class="navtree toctree-l2 page current">
+      <a class="current" href="./">
+        Portfolio Rebalancing
+          <span class="toctree-expand"></span>
+      </a>
+    </li>
+    
+      
+
+
+
+  <li class="toctree-l2 current">
+    <ul class="subnav-l2 current">
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#what-is-rebalancing">What is Rebalancing</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#why-should-i-rebalance-my-portfolio">Why Should I Rebalance my Portfolio?</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#methods-of-portfolio-rebalancing">Methods of Portfolio Rebalancing</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#what-is-the-best-rebalancing-period">What is the Best Rebalancing Period?</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#when-will-rebalancing-improve-returns">When will Rebalancing Improve Returns?</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#manual-rebalancing-rebalancing-period-customization">Manual Rebalancing &amp; Rebalancing Period Customization</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#disabling-rebalancing">Disabling Rebalancing</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#studies-on-rebalancing">Studies on Rebalancing</a>
+        </li>
+    
+    </ul>
+  </li>
+
+
+  
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../utilities/">Utilities</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">Account Management</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../account/pricing/">Pricing and Payment</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../account/integrations/">Exchange Integrations</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../account/coins/">Keeping Coins Away from HodlBot</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../account/security/">Security</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../account/referral/">Referral</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../account/affiliate/">Affiliate</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">FAQ</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../faq/">Frequently Asked Questions</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">HodlBot Wiki</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Strategies &raquo;</li>
+        
+      
+    
+    <li>Portfolio Rebalancing</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="portfolio-rebalancing">Portfolio Rebalancing</h1>
+<h2 id="what-is-rebalancing">What is Rebalancing</h2>
+<p>Portfolio rebalancing is the practice of resetting your portfolio to its original target allocation.</p>
+<p>For example, if you wanted to keep a portfolio that is 50% ETH, and 50% BTC.</p>
+<p>The price of ETH relative to BTC may increase, causing your portfolio to become 70% weighted in ETH.</p>
+<p>During a rebalance, HodlBot sells some ETH and uses it to purchase BTC, therefore getting your portfolio back to its original target.</p>
+<h2 id="why-should-i-rebalance-my-portfolio">Why Should I Rebalance my Portfolio?</h2>
+<p>Markets are constantly in flux. Conditions change and return on assets vary. When this happens, investors have two choices: they can let their portfolios drift, or they can try correct its course.</p>
+<p>Left to their own devices, most investors choose to drift because they prefer the status quo. But by doing nothing, the weights of outperforming assets rise and weights of underperforming assets shrink. When asset allocation changes, so does risk. Therefore, investors who want to maintain their risk-return profile will opt to rebalance their portfolios.</p>
+<h2 id="methods-of-portfolio-rebalancing">Methods of Portfolio Rebalancing</h2>
+<p>There many different ways to rebalance a portfolio. Here they are, listed here in the order of most inflexible, to the most flexible. HodlBot supports periodic rebalancing, and active rebalancing.</p>
+<p><em>Periodic Rebalancing</em></p>
+<p>Portfolios are reset to their target allocations on a fixed time interval. This can be every week, month, quarter, or year. Assets that are overweight are sold to purchase underweighted assets until the portfolio reaches its target allocation.</p>
+<p><em>Threshold rebalancing</em></p>
+<p>Rebalances are triggered when certain assets deviate away from their target by more than the accepted range i.e. 5% or 10%.</p>
+<p><em>Range rebalancing</em></p>
+<p>This is the same as threshold rebalancing, except that asset allocations are rebalanced back to the maximum threshold instead of the target percentage. I.e. the target for asset A is 20%, it spikes to 28%, so then it is rebalanced to 25%.</p>
+<p><em>Volatility-based rebalancing</em></p>
+<p>Again, this is very similar to threshold rebalancing except that the thresholds for rebalancing are set according to each asset’s expected volatility. The more volatile the asset, the wider the rebalancing threshold.</p>
+<p><em>Active rebalancing</em></p>
+<p>Portfolios are rebalanced based on human judgement.</p>
+<h2 id="what-is-the-best-rebalancing-period">What is the Best Rebalancing Period?</h2>
+<p>Studies and our primary research shows that there is no best rebalancing period. We tested 10,000 portfolios and did an analysis on the subject in this <a href="https://www.hodlbot.io/blog/what-is-the-best-rebalancing-period">article</a>.</p>
+<h2 id="when-will-rebalancing-improve-returns">When will Rebalancing Improve Returns?</h2>
+<p>It is generally accepted that rebalancing will outperform a drifting portfolio given these conditions:</p>
+<p><em>Similar rates of returns across different asset classes</em></p>
+<p>Returns across different asset classes need to be similar in order for rebalancing to be effective. Otherwise, if one asset’s growth is much lower, each rebalancing would push money from the winning asset into the losing one.</p>
+<p><em>Uncorrelated or negatively correlated assets</em></p>
+<p>Lower correlation causes the return on assets to offset each other, thereby reducing overall volatility. This accelerates the compounding of returns, and boosts portfolio values over time. The higher the correlation, the smaller the difference of returns across different asset classes must be in order for rebalancing to outperform holding.</p>
+<p><em>High variance within individual asset classes</em></p>
+<p>High variances leads to certain time periods where certain asset classes will significantly outperform the portfolio and other periods where where the same assets will significantly underperform the portfolio. When outperforming, a rebalance will take profits by selling. When underperforming, a rebalance will trigger a buy at the lower price.</p>
+<p><em>Mean-reversion happens on the same cycle that rebalancing takes place</em></p>
+<p>When assets have mean-reverting tendencies, they are more likely to appreciate if they have underperformed in the past. During a rebalance, additional funds are invested into underperforming assets. As performance reverts back to the mean, overall returns increase.</p>
+<h2 id="manual-rebalancing-rebalancing-period-customization">Manual Rebalancing &amp; Rebalancing Period Customization</h2>
+<p>You can manually rebalance your portfolio and change the frequency HodlBot rebalances your portfolio. </p>
+<p><img alt="" src="/img/rebalancing-utility.png" /></p>
+<h2 id="disabling-rebalancing">Disabling Rebalancing</h2>
+<p>If you would like to disable rebalancing on HodlBot, you can either disable HodlBot services or set your rebalancing period to something ridiculous like 1000000 days.</p>
+<h2 id="studies-on-rebalancing">Studies on Rebalancing</h2>
+<ul>
+<li><a href="https://www.hodlbot.io/blog/when-does-portfolio-rebalancing-improve-returns">When does rebalancing improve returns?</a></li>
+<li><a href="https://www.hodlbot.io/blog/should-you-rebalance-your-cryptocurrency-portfolio">Should you hold or rebalance?</a></li>
+<li><a href="https://www.hodlbot.io/blog/what-is-the-best-rebalancing-period">What is the best rebalancing period?</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../utilities/" class="btn btn-neutral float-right" title="Utilities">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../active-trading/" class="btn btn-neutral" title="Active Trading"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../active-trading/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../utilities/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

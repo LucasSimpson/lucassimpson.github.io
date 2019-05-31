@@ -6,14 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  
+  <meta name="author" content="Anthony Xie">
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Frequently Asked Questions - My Docs</title>
+  <title>Frequently Asked Questions - HodlBot Wiki</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../css/extra.css" rel="stylesheet">
   
   <script>
     // Current page data
@@ -25,7 +27,19 @@
   <script src="../js/jquery-2.1.1.min.js" defer></script>
   <script src="../js/modernizr-2.8.3.min.js" defer></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/django.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
+  
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-10006093-5', 'readthedocs.sheets.ch');
+      ga('send', 'pageview');
+  </script>
   
 </head>
 
@@ -36,7 +50,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> My Docs</a>
+        <a href=".." class="icon icon-home"> HodlBot Wiki</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
@@ -45,53 +59,271 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-	  
+	<ul class="tocbase current">
+    
+    
+      
+
+
+  <li class="navtree toctree-l1 inactive">
+    <a class="" href="..">Important Links</a>
+  </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">Getting Started</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
           
-            <li class="toctree-l1">
-		
-    <a class="" href="..">HodlBot Wiki</a>
-	    </li>
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../getting-started/pre-reqs/">HodlBot Pre-requisites</a>
+  </li>
+        
           
-            <li class="toctree-l1">
-		
-    <a class="" href="../pre-requisites/">What You'll Need to Use HodlBot</a>
-	    </li>
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../getting-started/set-up/">HodlBot Set-up</a>
+  </li>
+        
           
-            <li class="toctree-l1">
-		
-    <a class="" href="../getting-started/">Getting Started</a>
-	    </li>
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../getting-started/account-size/">Account Size</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">Strategies</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
           
-            <li class="toctree-l1">
-		
-    <a class="" href="../strategies/">Strategies</a>
-	    </li>
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../strategies/passive-investing/">Passive Investing</a>
+  </li>
+        
           
-            <li class="toctree-l1">
-		
-    <a class="" href="../portfolio-rebalancing/">Portfolio Rebalancing</a>
-	    </li>
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../strategies/active-trading/">Active Trading</a>
+  </li>
+        
           
-            <li class="toctree-l1">
-		
-    <a class="" href="../cashing-out/">Cashing Out</a>
-	    </li>
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../strategies/portfolio-rebalancing/">Portfolio Rebalancing</a>
+  </li>
+        
           
-            <li class="toctree-l1">
-		
-    <a class="" href="../tips-and-tricks/">Tips and Tricks</a>
-	    </li>
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../strategies/utilities/">Utilities</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">Account Management</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
           
-            <li class="toctree-l1 current">
-		
-    <a class="current" href="./">Frequently Asked Questions</a>
-    <ul class="subnav">
-            
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../account/pricing/">Pricing and Payment</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../account/integrations/">Exchange Integrations</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../account/coins/">Keeping Coins Away from HodlBot</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../account/security/">Security</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../account/referral/">Referral</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../account/affiliate/">Affiliate</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">FAQ</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  
+    
+    <li class="navtree toctree-l2 page current">
+      <a class="current" href="./">
+        Frequently Asked Questions
+          <span class="toctree-expand"></span>
+      </a>
+    </li>
+    
+      
+
+  <li class="toctree-l2 current with-children">
+    <a href="#faq">
+      FAQ
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l2 current">
+    <ul class="subnav-l2 current">
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#how-much-does-hodlbot-cost">How much does HodlBot cost?</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#how-does-hodlbot-protect-my-api-keys">How does HodlBot protect my API Keys?</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#does-hodlbot-take-deposits">Does HodlBot take deposits?</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#what-kind-of-strategies-can-i-choose">What kind of strategies can I choose?</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#what-happens-after-i-activate-a-strategy">What happens after I activate a strategy?</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#what-are-the-hodl-indices">What are the HODL Indices?</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#how-does-hodlbot-rebalance-my-portfolio">How does HodlBot rebalance my portfolio?</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#does-hodlbot-charge-a-transacation-fee-for-trades">Does HodlBot charge a transacation fee for trades?</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#does-hodlbot-trade-everything-in-my-account">Does HodlBot trade everything in my account?</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#what-is-the-account-minimum">What is the account minimum?</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#what-are-the-tax-implications-of-using-hodlbot">What are the tax implications of using HodlBot?</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#why-does-my-composition-not-match-my-target-portfolio">Why does my composition not match my target portfolio?</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#why-did-my-portfolio-rebalance-not-do-anything">Why did my portfolio rebalance not do anything?</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#what-is-the-best-rebalancing-period">What is the best rebalancing period?</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#i-have-business-inquiries-who-do-i-e-mail">I have business inquiries. Who do I e-mail?</a>
+        </li>
+    
     </ul>
-	    </li>
-          
-        </ul>
+  </li>
+
+
+  
+        
+      </ul>
+    </li>
+    
+  </ul>
       </div>
       &nbsp;
     </nav>
@@ -101,7 +333,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">My Docs</a>
+        <a href="..">HodlBot Wiki</a>
       </nav>
 
       
@@ -111,6 +343,10 @@
   <ul class="wy-breadcrumbs">
     <li><a href="..">Docs</a> &raquo;</li>
     
+      
+        
+          <li>FAQ &raquo;</li>
+        
       
     
     <li>Frequently Asked Questions</li>
@@ -123,30 +359,37 @@
           <div role="main">
             <div class="section">
               
-                <p><strong>How much does HodlBot cost?</strong></p>
-<p>It's free for the first 14 days, and $10 a month afterwards. All accounts under $500 are free forever. We don't charge a % fee. Our users keep all their returns.</p>
-<p><strong>How does HodlBot protect my API Keys?</strong></p>
+                <h1 id="faq">FAQ</h1>
+<h2 id="how-much-does-hodlbot-cost">How much does HodlBot cost?</h2>
+<p>It's free for the first 14 days, and $10 a month afterwards. All accounts under $500 are free forever. We don't charge a % fee. Our users keep all their returns. Discounts are available for 3 &amp; 12 month purchases.</p>
+<h2 id="how-does-hodlbot-protect-my-api-keys">How does HodlBot protect my API Keys?</h2>
 <p>HodlBot only requires API keys with trade access, not withdrawal. This means nobody can withdraw funds from your Binance account. We encrypt all user data on our end with cryptographically secure hash functions. In addition, we engage in penetration testing and monitor logs to shut down trading in the case of suspicious activity.</p>
-<p><strong>Does HodlBot take deposits?</strong>
-No. HodlBot is a software tool, not a fund or an exchange. Deposit your cryptocurrency on Binance.</p>
-<p><strong>What kind of strategies can I choose?</strong>
-You can index the market with the HODL20 or you can create your own custom portfolio strategy.</p>
-<p><strong>What happens after I activate a strategy?</strong>
-HodlBot will execute the trades on your Binance account so that your portfolio will match the composition of the strategy you've chosen.</p>
-<p><strong>What is the HODL20?</strong>
-The HODL 20 is a cryptocurrency index that users can replicate with their own Binance account. The index weighs the top 20 cryptocurrencies by market cap, and caps each coin at 10%. You can read more about it <a href="https://blog.hodlbot.io/hodlbot-an-intelligent-binance-trading-bot?_ga=2.93195289.524825550.1536674109-2117117448.1536674109">here</a>.</p>
-<p><strong>How does HodlBot rebalance my portfolio?</strong>
-HodlBot rebalances your portfolio by intelligently making a series of trades to get you towards your target allocation. The default period is one month but you can customize it. You can also manually trigger rebalances anytime.</p>
-<p><strong>Does HodlBot charge a transacation fee for trades?</strong>
-HodlBot does not charge any transaction fees. Binance charges 0.1% transaction fee on trades. For the HODL 20, a 3 year historical back-test with monthly rebalances incurred an average of 0.26% from transaction fees per year.</p>
-<p><strong>Does HodlBot trade everything in my account?</strong>
-Yes. When you use HodlBot, it will execute the strategy with all of the holdings in your Binance exchange account. If you wish to actively trade, you should do it on another exchange account. The other option is to place limit sells at ridiculous prices on coins you want to hold. HodlBot ignores open orders.</p>
-<p><strong>What is the account minimum?</strong>
-There is no account minimum. We recommend $200 to protect users from Binance's minimum trading limit and make sure that diversified portfolios can be created properly.</p>
-<p><strong>What are the tax implications of using HodlBot?</strong>
-In certain jurisdictions, buy &amp; sell actions on exchanges are taxable events. To comply with tax regulations, you will be able to export a log of HodlBot's transactions in csv format.</p>
-<p><strong>What are the upcoming product changes?</strong>
-We're constantly updating our product. Our public roadmap is available [here(https://trello.com/b/udOwopV3/hodlbot-roadmap)].</p>
+<h2 id="does-hodlbot-take-deposits">Does HodlBot take deposits?</h2>
+<p>No. HodlBot is a software tool, not a fund or an exchange. Deposit your cryptocurrency on Binance or Kraken. Then connect your exchange accounts to HodlBot.</p>
+<h2 id="what-kind-of-strategies-can-i-choose">What kind of strategies can I choose?</h2>
+<p>You can index the market with the HODL10, HODL20, or HODL30. You can create your own cryptocurrency index, or you can create your own cryptocurrency portfolio.</p>
+<h2 id="what-happens-after-i-activate-a-strategy">What happens after I activate a strategy?</h2>
+<p>HodlBot will execute the trades on your exchange account so that your portfolio will match the composition of the strategy you've chosen.</p>
+<h2 id="what-are-the-hodl-indices">What are the HODL Indices?</h2>
+<p>The HODL indices are market indices designed to track the performance of the entire market. Read more about the methodolgoy <a href="/strategies/passive-investing.md">here</a>. </p>
+<h2 id="how-does-hodlbot-rebalance-my-portfolio">How does HodlBot rebalance my portfolio?</h2>
+<p>HodlBot rebalances your portfolio by intelligently making a series of trades to get you towards your target allocation. The default period is one month but you can customize it. You can also manually trigger rebalances anytime.</p>
+<h2 id="does-hodlbot-charge-a-transacation-fee-for-trades">Does HodlBot charge a transacation fee for trades?</h2>
+<p>HodlBot does not charge any transaction fees. Binance charges 0.1% transaction fee on trades. For the HODL 20, a 3 year historical back-test with monthly rebalances incurred an average of 0.26% from transaction fees per year.</p>
+<h2 id="does-hodlbot-trade-everything-in-my-account">Does HodlBot trade everything in my account?</h2>
+<p>Yes. When you use HodlBot, it will execute the strategy with all of the holdings in your Binance exchange account. If you wish to actively trade, you should do it on another exchange account, or an exchange sub-account. The other option is to place limit sells at ridiculous prices on coins you want to hold. HodlBot ignores open orders.</p>
+<h2 id="what-is-the-account-minimum">What is the account minimum?</h2>
+<p>There is no account minimum. We recommend $200 to protect users from minimum trading limit and make sure that diversified portfolios can be created properly.</p>
+<h2 id="what-are-the-tax-implications-of-using-hodlbot">What are the tax implications of using HodlBot?</h2>
+<p>In certain jurisdictions, buy &amp; sell actions on exchanges are taxable events. To comply with tax regulations, you will be able to export a log of HodlBot's transactions in csv format.</p>
+<h2 id="why-does-my-composition-not-match-my-target-portfolio">Why does my composition not match my target portfolio?</h2>
+<p>If your portfolio size is under the recommended amount, we may not be able to execute the required trades to match your account with your target portfolio. This is due to minimum trading limits imposed by exchanges.</p>
+<h2 id="why-did-my-portfolio-rebalance-not-do-anything">Why did my portfolio rebalance not do anything?</h2>
+<p>Rebalances reset your portfolio towards the target. If your portfolio hasn't deviated enough from the target, and your portfolio size is not massive, we may not be able to execute any rebalancing trades due to minimum trading limits imposed by exchanges. </p>
+<h2 id="what-is-the-best-rebalancing-period">What is the best rebalancing period?</h2>
+<p>After backtesting 10,000 cryptocurrency portfolios, we found that there is no best rebalancing period. Anything between 7-90 days is reasonable. Check out our study <a href="https://www.hodlbot.io/blog/what-is-the-best-rebalancing-period">here</a>.</p>
+<h2 id="i-have-business-inquiries-who-do-i-e-mail">I have business inquiries. Who do I e-mail?</h2>
+<p>Email founders@hodlbot.io for business inquiries.</p>
               
             </div>
           </div>
@@ -155,7 +398,7 @@ We're constantly updating our product. Our public roadmap is available [here(htt
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="../tips-and-tricks/" class="btn btn-neutral" title="Tips and Tricks"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../account/affiliate/" class="btn btn-neutral" title="Affiliate"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -181,7 +424,7 @@ We're constantly updating our product. Our public roadmap is available [here(htt
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../tips-and-tricks/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../account/affiliate/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
     </span>

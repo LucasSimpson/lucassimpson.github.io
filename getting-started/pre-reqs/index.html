@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Anthony Xie">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>HodlBot Pre-requisites - HodlBot Wiki</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../css/extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "HodlBot Pre-requisites";
+    var mkdocs_page_input_path = "getting-started/pre-reqs.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/django.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-10006093-5', 'readthedocs.sheets.ch');
+      ga('send', 'pageview');
+  </script>
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> HodlBot Wiki</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="tocbase current">
+    
+    
+      
+
+
+  <li class="navtree toctree-l1 inactive">
+    <a class="" href="../..">Important Links</a>
+  </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">Getting Started</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  
+    
+    <li class="navtree toctree-l2 page current">
+      <a class="current" href="./">
+        HodlBot Pre-requisites
+          <span class="toctree-expand"></span>
+      </a>
+    </li>
+    
+      
+
+
+
+  <li class="toctree-l2 current">
+    <ul class="subnav-l2 current">
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#basic-requirements">Basic Requirements</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#how-to-set-up-your-binance-account">How to set-up your Binance account</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#how-to-send-cryptocurrency-to-binance">How to send cryptocurrency to Binance</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#how-to-set-up-your-kraken-account">How to set-up your Kraken account</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#how-to-send-cryptocurrency-to-kraken">How to send cryptocurrency to Kraken</a>
+        </li>
+    
+    </ul>
+  </li>
+
+
+  
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../set-up/">HodlBot Set-up</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../account-size/">Account Size</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">Strategies</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../strategies/passive-investing/">Passive Investing</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../strategies/active-trading/">Active Trading</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../strategies/portfolio-rebalancing/">Portfolio Rebalancing</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../strategies/utilities/">Utilities</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">Account Management</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../account/pricing/">Pricing and Payment</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../account/integrations/">Exchange Integrations</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../account/coins/">Keeping Coins Away from HodlBot</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../account/security/">Security</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../account/referral/">Referral</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../account/affiliate/">Affiliate</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">FAQ</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../faq/">Frequently Asked Questions</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">HodlBot Wiki</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Getting Started &raquo;</li>
+        
+      
+    
+    <li>HodlBot Pre-requisites</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="hodlbot-pre-requisites">HodlBot Pre-requisites</h1>
+<p>HodlBot is a customizable cryptocurrency trading bot that enables users to index the market, create custom portfolios, and automatically rebalance their cryptocurrency portfolios</p>
+<h2 id="basic-requirements">Basic Requirements</h2>
+<ul>
+<li>A <strong><a href="https://www.binance.com/register.html?ref=28230677">Binance Account</a> or a <a href="https://www.kraken.com/sign-up">Kraken Account</a></strong></li>
+<li><strong>$200 in any cryptocurrency:</strong></li>
+</ul>
+<p>If you have either of these, you can move on to the next <a href="/getting-started">step</a>.</p>
+<p>Otherwise keep reading.</p>
+<p>If you don't have a Binance account or a Kraken account, then you'll need to create one. </p>
+<p>If you have either a Binance or a Kraken account, but don't have any cryptocurrency deposited. You'll need to deposit or purchase some cryptocurrency.</p>
+<hr />
+<h2 id="how-to-set-up-your-binance-account">How to set-up your Binance account</h2>
+<p>Binance is the world's top cryptocurrency exchange by trading volume.</p>
+<p>Setting up a Binance  account is easy. If you don't have one, you can sign-up for a free account <a href="https://www.binance.com/register.html?ref=28230677">here</a>.</p>
+<p>Binance is primarily a crypto-to-crypto exchange. While you can buy cryptocurrency with fiat currency via simplex, the fees are quite substantial. </p>
+<p>It may be more cost-effective to buy cryptocurrency from another fiat-to-crypto exchange like Coinbase and send it to Binance after. </p>
+<h2 id="how-to-send-cryptocurrency-to-binance">How to send cryptocurrency to Binance</h2>
+<p>If you have bought cryptocurrency elsewhere and you want to send it to Binance, go to Binance and hover over the funds tab.</p>
+<p>Next, click on deposits. </p>
+<p>Once you're on there, select a coin you would like to deposit.</p>
+<p><img alt="alt text" src="https://cdn-images-1.medium.com/max/1600/1*WVaPtMbVXYjTCGuR8CY5oQ.png" /></p>
+<p>From another exchange, or your wallet, send over your desired amount to the deposit address.</p>
+<p><img alt="" src="https://cdn-images-1.medium.com/max/1600/1*olSLP6ZPvLDcxecxuYuhbw.png" />
+Please note that it may take some time for your funds to reach Binance, you can always track it in the transaction history seen below.</p>
+<h2 id="how-to-set-up-your-kraken-account">How to set-up your Kraken account</h2>
+<p>HodlBot also works with Kraken. </p>
+<p>Kraken is one of the largest cryptocurrency exchanges. You can trade fiat currency for cryptocurrency on Kraken. </p>
+<p>Setting up an account is very straight-forward. If you don't have one, you can sign-up for a <a href="https://www.kraken.com/sign-up">free account</a>. </p>
+<p>You can buy cryptocurrency with fiat currency right on Kraken. </p>
+<h2 id="how-to-send-cryptocurrency-to-kraken">How to send cryptocurrency to Kraken</h2>
+<p>Once you sign on Kraken, head over to the Funding tab.</p>
+<p>There you can select the cryptocurrency you want to deposit on Kraken. </p>
+<p>Once you select a cryptocurrency, click generate new address to get a deposit address. This deposit address will be owned by you. If you send cryptocurrency to the address, you will see it show up on Kraken once the transaction goes through.</p>
+<p>From another exchange, or your wallet, send over your desired amount to the deposit address.</p>
+<p><img alt="" src="/img/kraken-deposit.png" /></p>
+<p>Please note that it may take some time for your funds to reach Kraken due to the network speed of blockchain transactions.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../set-up/" class="btn btn-neutral float-right" title="HodlBot Set-up">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../.." class="btn btn-neutral" title="Important Links"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../.." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../set-up/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

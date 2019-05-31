@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Anthony Xie">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>HodlBot Set-up - HodlBot Wiki</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../css/extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "HodlBot Set-up";
+    var mkdocs_page_input_path = "getting-started/set-up.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/django.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-10006093-5', 'readthedocs.sheets.ch');
+      ga('send', 'pageview');
+  </script>
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> HodlBot Wiki</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="tocbase current">
+    
+    
+      
+
+
+  <li class="navtree toctree-l1 inactive">
+    <a class="" href="../..">Important Links</a>
+  </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">Getting Started</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../pre-reqs/">HodlBot Pre-requisites</a>
+  </li>
+        
+          
+
+
+  
+    
+    <li class="navtree toctree-l2 page current">
+      <a class="current" href="./">
+        HodlBot Set-up
+          <span class="toctree-expand"></span>
+      </a>
+    </li>
+    
+      
+
+
+
+  <li class="toctree-l2 current">
+    <ul class="subnav-l2 current">
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#connecting-your-cryptocurrency-exchange-account">Connecting Your Cryptocurrency Exchange Account</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#setting-up-your-api-keys-on-binance">Setting up your API keys on Binance</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#connecting-your-binance-account-keys-to-hodlbot">Connecting Your Binance Account Keys to HodlBot</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#setting-up-your-api-keys-on-kraken">Setting up your API keys on Kraken</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#connecting-your-kraken-account-keys-to-hodlbot">Connecting Your Kraken Account Keys to HodlBot</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#choosing-a-strategy-next-steps">Choosing a Strategy - Next Steps</a>
+        </li>
+    
+    </ul>
+  </li>
+
+
+  
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../account-size/">Account Size</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">Strategies</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../strategies/passive-investing/">Passive Investing</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../strategies/active-trading/">Active Trading</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../strategies/portfolio-rebalancing/">Portfolio Rebalancing</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../strategies/utilities/">Utilities</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">Account Management</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../account/pricing/">Pricing and Payment</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../account/integrations/">Exchange Integrations</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../account/coins/">Keeping Coins Away from HodlBot</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../account/security/">Security</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../account/referral/">Referral</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../account/affiliate/">Affiliate</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">FAQ</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../faq/">Frequently Asked Questions</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">HodlBot Wiki</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Getting Started &raquo;</li>
+        
+      
+    
+    <li>HodlBot Set-up</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="hodlbot-set-up">HodlBot Set-up</h1>
+<p>Before you can set-up HodlBot, you'll need this:</p>
+<ul>
+<li>A <strong><a href="https://www.binance.com/register.html?ref=28230677">Binance Account</a> or a <a href="https://www.kraken.com/sign-up">Kraken Account</a></strong></li>
+<li><strong>$200 in any cryptocurrency:</strong></li>
+</ul>
+<p>If you don't have at least $200 in any cryptocurrency in either your Binance account or your Kraken account, go back to the <a href="/prerequisites">last step</a>. There are instructions on how to create an account and fund it.</p>
+<p>If you do, then you're ready to set-up HodlBot. </p>
+<h2 id="connecting-your-cryptocurrency-exchange-account">Connecting Your Cryptocurrency Exchange Account</h2>
+<p>HodlBot Connects to Your Crypto Exchange account via the API. </p>
+<p>We use the exchange API to programatically execute trades. We do not have account withdrawal permission and all user data is is encrypted (HMAC SHA-256).</p>
+<p>In order to connect to your exchange account, we'll need permissions to do so. That's why we need API keys setup. </p>
+<p>Note that you have full control over your API keys. You can delete them on the exchange at any time. We also recommend limiting withdrawal permissions so API keys are trade-only.</p>
+<h2 id="setting-up-your-api-keys-on-binance">Setting up your API keys on Binance</h2>
+<p>Once logged in , set-up your keys <a href="https://www.binance.com/userCenter/createApi.html">here</a>.</p>
+<p><img alt="set-up API keys on Binance" src="https://cdn-images-1.medium.com/max/1600/1*9DuxPOpNTQwXNW0lHvnoMA.png" /></p>
+<p><img alt="Create a new API Key on Binance" src="https://cdn-images-1.medium.com/max/1600/1*UTn2o-knqFSZmh5jyVdG4Q.png" /></p>
+<p><img alt="Save your API key and secret" src="https://cdn-images-1.medium.com/max/1600/1*MMgc4RptsOsKjZVFXHO4DQ.png" /></p>
+<p>By default, trade access is enabled, and withdrawal access is disabled. This means that no one will ever be able to withdraw funds from your account using the API.</p>
+<p>Once you get your API Key and secret. Write it down and keep it somewhere safe. Binance will not show the secret key again after this step.</p>
+<h2 id="connecting-your-binance-account-keys-to-hodlbot">Connecting Your Binance Account Keys to HodlBot</h2>
+<p>Once your API keys are generated. You can subscribe them to HodlBot. This will connect your Binance account to HodlBot. We will then check if it is valid and that trading access is enabled.</p>
+<p><img alt="Enter your API keys" src="/img/binance-api-keys.png" /></p>
+<h2 id="setting-up-your-api-keys-on-kraken">Setting up your API keys on Kraken</h2>
+<p>To set-up your API keys. Head on over to Kraken and sign in.</p>
+<p>Once you're signed in, navigate to the settings page and click on the API tab. </p>
+<p><img alt="set-up API keys on Kraken" src="/img/kraken-api-settings.png" /></p>
+<p><img alt="Create a new API Key on Kraken" src="/img/kraken-permissions.png" /></p>
+<p>We require the following permissions:</p>
+<ul>
+<li>query funds</li>
+<li>query open orders &amp; trades</li>
+<li>query closed orders &amp; trades</li>
+<li>modify orders</li>
+<li>cancel/close orders</li>
+<li>query ledger entries</li>
+</ul>
+<p>Make sure to leave withdrawal and deposit access unchecked, as we do not require these permissions. For security purposes, it is impossible for Hodlot to ever withdraw cryptocurrency from your exchange account</p>
+<p>Once the keys are successfully generated, you can head over to HodlBot and input them in. </p>
+<p><img alt="Save your API key and secret" src="/img/kraken-keys-generated.png" /></p>
+<h2 id="connecting-your-kraken-account-keys-to-hodlbot">Connecting Your Kraken Account Keys to HodlBot</h2>
+<p>Once your API keys are generated. You can subscribe them to HodlBot. We will then check if it is valid and that trading access is enabled.</p>
+<p>You’ll have a chance to enter these details in HodlBot during onboarding.</p>
+<p><img alt="Kraken onboarding crypto trading bot HodlBot" src="/img/kraken-onboarding.png" /></p>
+<p>But if you’ve already onboarded, you can also navigate to integrations tab on the settings page. There you will find a form to enter Kraken API keys.</p>
+<p><img alt="Kraken api keys crypto trading bot HodlBot" src="/img/kraken-settings.png" /></p>
+<h2 id="choosing-a-strategy-next-steps">Choosing a Strategy - Next Steps</h2>
+<p>After setting-up your account, it's time to set-up a trading strategy. </p>
+<p>Click here to go to the <a href="/strategies">next step</a>. </p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../account-size/" class="btn btn-neutral float-right" title="Account Size">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../pre-reqs/" class="btn btn-neutral" title="HodlBot Pre-requisites"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../pre-reqs/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../account-size/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>
